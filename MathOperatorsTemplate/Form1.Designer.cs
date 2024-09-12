@@ -42,6 +42,7 @@
             this.outputLabel.Size = new System.Drawing.Size(326, 460);
             this.outputLabel.TabIndex = 0;
             this.outputLabel.Text = "Welcome...";
+            this.outputLabel.Click += new System.EventHandler(this.outputLabel_Click);
             // 
             // runButton
             // 
