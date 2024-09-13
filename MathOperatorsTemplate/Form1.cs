@@ -84,6 +84,13 @@ namespace MathOperatorsTemplate
             /// Hours Worked: 8
             /// Total Pay: 122
 
+            double payRate = 15.25;
+            int hoursWorked = 8;
+            double totalPay = payRate * hoursWorked;
+
+            outputLabel.Text += $"\nRate of Pay:  {payRate}";
+            outputLabel.Text += $"\nHours Worked: {hoursWorked}";   
+            outputLabel.Text += $"\nTotal pay :   {totalPay}";
 
 
             /// 7. Create a program which calculates the tax amount for a
@@ -99,13 +106,25 @@ namespace MathOperatorsTemplate
             /// Bill Amount: 22.5
             /// 13% Tax: 2.925             
 
+            double billAmount = 22.50;
+            double taxRate = 0.13;
+            double taxAmount = billAmount * taxRate;
+            double totalAmount = taxAmount + billAmount;
+
+            outputLabel.Text += $"\n Bill Amount: {billAmount}";
+            outputLabel.Text += $"\n 13% tax:     {taxAmount}";
+            outputLabel.Text += $"\n Total:       {totalAmount}";
 
 
             // 8. Increment your age variable by 1 using ++ and display it
 
+            age++;
+                  outputLabel.Text += $"\nYour age is {age}";
+
 
             // 9. Decrement your age variable by 1 using -- and display it          
-
+            age--;
+            outputLabel.Text += $"\nYour age is {age}";
 
         }
 
